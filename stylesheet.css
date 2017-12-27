@@ -10,7 +10,7 @@ h2{
     text-transform:uppercase;
     letter-spacing:5px;
     font-size:28px!important;
-    margin-top:75px !important;
+    margin-top:40px !important;
 }
 
 strong{
@@ -86,6 +86,7 @@ a{
 
 #content p{
     font-size:1em;
+    margin-top:15px;
 }
 
 /*Resume*/
