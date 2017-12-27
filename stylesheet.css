@@ -51,6 +51,14 @@ a{
     border:0 !important;
 }
 
+.navbar-default .navbar-toggle {
+    background-color: #c6d265 !important;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #c6d265 !important;
+}
+
 .navbar-nav a{
     text-transform:uppercase;
     text-decoration:none;
