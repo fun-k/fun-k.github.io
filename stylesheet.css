@@ -3,17 +3,13 @@
 html, body{
     font-family:'Open Sans', Calibri, sans-serif !important;
     height:100%;
-    padding-top: 40px; }
-    @media screen and (max-width: 768px) {
-        body { padding-top: 20px; 
-    }
 }
 
 h2{
-    color:#c6d265;
     text-transform:uppercase;
     letter-spacing:5px;
     font-size:28px!important;
+    padding-top:40px;
 }
 
 strong{
