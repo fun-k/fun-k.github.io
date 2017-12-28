@@ -11,6 +11,7 @@ h2{
     letter-spacing:5px;
     font-size:28px!important;
     margin-top:40px !important;
+    margin-bottom:25px;
 }
 
 strong{
@@ -86,7 +87,6 @@ a{
 
 #content p{
     font-size:1em;
-    margin-top:25px;
 }
 
 /*Resume*/
