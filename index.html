@@ -11,7 +11,7 @@
 
     <title>Andrea Funk | Designer</title>
     <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="assets/stylesheet.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,8 +19,18 @@
     <script src="https://use.fontawesome.com/a7eb95e421.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='assets/hover-min.css' rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <script>
+    $(".navbar-nav").child.hover(function() {
+      $(this).({ borderColor: "black" }, 1000);
+        },function() {
+          $(this).animate({ borderColor: "red" }, 500);
+        });
+      }
+    </script>
+
 </head>
 
 <body>
@@ -40,22 +50,22 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="hvr-push" href="#about">About</a></li>
+                    <li><a class="hvr-push" href="#portfolio">Portfolio</a></li>
+                    <li><a class="hvr-push" href="#resume">Resume</a></li>
+                    <li><a class="hvr-push" href="#skills">Skills</a></li>
+                    <li><a class="hvr-push" href="#contact">Contact</a></li>
                 </ul>
                 </div>
             </div>
         </nav>
-                 
-        <div class="container" id="content">
 
-            <div id="about">                    
+        <div class="container">
+
+            <div id="about">
                 <h2>Hello!</h2>
                 <div class="row">
-                    <div class="col-md-12">                   
+                    <div class="col-md-10">
                         <p>
                             My name's Andrea, and I'm a graphic designer from Kokomo, Indiana. Just this May, I graduated from Indiana University with a B.S. in New Media and web design concentration. Although I'm no longer a student, I'm willing to learn new things and hone my skills for many years to come.
                             <br><br>
@@ -69,73 +79,79 @@
 
 
             <div id="portfolio">
-            <h2>Portfolio</h2>
-
+              <h2>Portfolio</h2>
+              <div class="row"></div>
             </div><!--portfolio end-->
 
-            
-            <div id="resume">
-                <h2>Resume</h2>
-                <div class="row">
-                <div class="col-md-12">
-                    <table class="table table-responsive">
-                        <tbody>
-                            <th>Experience</th>
-                            <tr>
-                                <td class="col1">Aug 2016 – present</td>
-                                <td><strong>Carson Pirie Scott, Sales Associate</strong>
-                                    <ul>
-                                        <li>Greet customers and help them find products</li>
-                                        <li>Perform transactions at the cash register and remove security tags from merchandise</li>
-                                        <li>Sign customers up for the Carson’s credit card</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td class="col1">Oct 2015 – Jan 2016</td>
-                                <td><strong>Old Navy, Sales Associate</strong>
-                                    <ul>
-                                        <li>Greet customers entering the store</li>
-                                        <li>Explain benefits of and sign customers up for the Old Navy Card (ONC)</li>
-                                        <li>Work at cash register to check out purchases and remove security tags from clothing</li>
-                                        <li>Assists customers in fashion advice and finding items</li>
-                                        <li>Create an appealing, clean, and safe environment for customers</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col1">Aug 2014 - May 2015</td>
-                                    <td><strong>Indiana University Art Gallery, New Media Intern</strong>
-                                        <ul>
-                                            <li>Maintained gallery’s webpage through web content management system</li>
-                                            <li>Designed postcards for exhibits</li>
-                                            <li>Created and updated social media pages</li>
-                                            <li>Designed miscellaneous materials e.g. posters</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                        <table class="table table-responsive">
-                            <tbody>
-                                <th>Education</th>
-                                <tr>
-                                    <td class="col1">Aug 2012 - May 2016</td>
-                                    <td><strong>Indiana University</strong>
-                                        <ul>
-                                            <li>Bachelor of Science in New Media Communications, Web Design Concentration</li>
-                                        </ul>
-                                    </td>
-                                </tr>    
-                            </tbody>
-                        </table>
-                    
-<!--                    <i class="fa fa-file-pdf-o fa-1x" aria-hidden="true"></i> <a href="assets/files/FunkAndreaResume2016.pdf">Resume</a>
-                        <i class="fa fa-file-pdf-o fa-1x" aria-hidden="true"></i> <a href="assets/files/FunkAndreaCV2016.pdf">CV</a> -->
+            <div id="resume">
+              <h2>Resume</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                    <span class="header">Experience</span>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                      <span class="col1">Aug 2016 – present</span>
+                    </div>
+                    <div class="col-md-7">
+                      <strong>Carson Pirie Scott, Sales Associate</strong>
+                        <ul>
+                          <li>Greet customers and help them find products</li>
+                          <li>Perform transactions at the cash register and remove security tags from merchandise</li>
+                          <li>Sign customers up for the Carson’s credit card</li>
+                        </ul>
                     </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <span class="col1">Oct 2015 – Jan 2016</span>
+                  </div>
+                  <div class="col-md-7">
+                    <strong>Old Navy, Sales Associate</strong>
+                    <ul>
+                      <li>Greet customers entering the store</li>
+                        <li>Explain benefits of and sign customers up for the Old Navy Card (ONC)</li>
+                        <li>Work at cash register to check out purchases and remove security tags from clothing</li>
+                        <li>Assists customers in fashion advice and finding items</li>
+                        <li>Create an appealing, clean, and safe environment for customers</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                      <span class="col1">Aug 2014 - May 2015</span>
+                    </div>
+                    <div class="col-md-7">
+                      <strong>Indiana University Art Gallery, New Media Intern</strong>
+                        <ul>
+                          <li>Maintained gallery’s webpage through web content management system</li>
+                          <li>Designed postcards for exhibits</li>
+                          <li>Created and updated social media pages</li>
+                          <li>Designed miscellaneous materials e.g. posters</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <span class="header">Education</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <span class="col1">Aug 2012 - May 2016</span>
+                  </div>
+                  <div class="col-md-7">
+                    <strong>Indiana University</strong>
+                      <ul>
+                        <li>Bachelor of Science in New Media Communications, Web Design Concentration</li>
+                      </ul>
+                  </div>
+                </div>
+<!--                    <i class="fa fa-file-pdf-o fa-1x" aria-hidden="true"></i> <a href="assets/files/FunkAndreaResume2016.pdf">Resume</a>
+                        <i class="fa fa-file-pdf-o fa-1x" aria-hidden="true"></i> <a href="assets/files/FunkAndreaCV2016.pdf">CV</a> -->
             </div><!--end resume-->
 
 
@@ -145,97 +161,67 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <table class="table table-responsive">
-                            <tbody>
-                                <tr>
-                                    <td>Adobe Photoshop <span class="sr-only">5 stars</span></td>
-                                    <td>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Adobe Illustrator <span class="sr-only">4 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Adobe InDesign <span class="sr-only">3 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Adobe Dreamweaver <span class="sr-only">4 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <table class="table table-responsive">
-                                <tbody>
-                                    <tr>
-                                        <td>HTML 5 <span class="sr-only">5 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CSS 3 <span class="sr-only">5 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>JavaScript <span class="sr-only">3 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>jQuery <span class="sr-only">4 stars</span></td>
-                                        <td>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                        </table>
+                      <div class="skills-txt">
+                        Adobe Photoshop <span class="sr-only">5 stars</span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <br />
+                        Adobe Illustrator <span class="sr-only">4 stars</span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <br />
+                        Adobe InDesign <span class="sr-only">3 stars</span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <br />
+                        Adobe Dreamweaver <span class="sr-only">4 stars</span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
                     </div>
+                    <div class="col-md-6">
+                      <div class="skills-txt">
+                        <span>HTML 5 <span class="sr-only">5 stars</span></span>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <br />
+                          <span>CSS 3 <span class="sr-only">5 stars</span></span>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <br />
+                          <span>JavaScript <span class="sr-only">3 stars</span></span>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                          <br />
+                          <span>jQuery <span class="sr-only">4 stars</span></span>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                      </div>
                 </div>
             </div><!--skills end-->
 
@@ -243,16 +229,16 @@
             <div id="contact">
                 <h2>Contact</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <table class="table-responsive table">
                             <tbody>
-                                <tr>
+                                <!-- <tr>
                                     <td>
                                         <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-                                        <span class="sr-only">Phone number:</span> 
+                                        <span class="sr-only">Phone number:</span>
                                         (765) 252-9970<br>
                                     </td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <td>
                                         <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
@@ -262,8 +248,9 @@
                             </tbody>
                         </table>
                         <p>
-                            <a class="soc-link" href="https://www.linkedin.com/in/andrea-funk-650296121"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
-                            <a class="soc-link" href="https://www.behance.net/afunk91958d"><i class="fa fa-behance-square fa-4x" aria-hidden="true"></i></a>
+                            <a class="soc-link hvr-push" href="https://www.linkedin.com/in/andrea-funk-650296121"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+                            <a class="soc-link hvr-push" href="https://www.behance.net/afunk91958d"><i class="fa fa-behance-square fa-4x" aria-hidden="true"></i></a>
+                            <a class="soc-link hvr-push" href="https://github.com/fun-k"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
                         </p>
                     </div>
                     <div class="article col-md-6">
@@ -283,9 +270,9 @@
                                         <textarea class="fixIt form-control" name="entry.839337160" maxlength="5000" id="entry_839337160" required></textarea>
                                     </li>
                                     <li class="submit">
-                                        <input class="btn btn-primary form-control" type="submit" name="submit" value="Send" target="_blank"/>
+                                        <input class="btn btn-primary form-control hvr-pulse-shrink" type="submit" name="submit" value="Send" target="_blank"/>
                                     </li>
-                                </ul>
+                                  </ul>
                             </fieldset>
                         </form>
                     </div>
@@ -300,7 +287,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Andrea Funk</p>
+                    <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018 Andrea Funk</p>
                 </div>
             </div>
         </div>
