@@ -43,9 +43,7 @@
 
 	        $('html, body').stop().animate({
 	            'scrollTop': $target.offset().top
-	        }, 900, 'swing', function () {
-	            window.location.hash = target;
-          });
+	        }, 600, 'swing');
 	      });
 	     });
 
@@ -78,53 +76,55 @@
               </ul>
               </div>
           </div>
-      </nav>
+        </nav>
 
         <div class="container">
 
             <div id="about" class="anchor">
                 <h2>Hello!</h2>
-                <div class="row">
-                    <div class="col-md-10">
-                        <p>
-                            My name's Andrea, and I'm a graphic designer from Kokomo, Indiana. Just this May, I graduated from Indiana University with a B.S. in New Media and web design concentration. Although I'm no longer a student, I'm willing to learn new things and hone my skills for many years to come.
-                            <br><br>
-                            My goal is to make clean, harmonious designs that communicate messages in a unique way. I enjoy experimenting with typography, color, and illustrative elements the most. I also do photo retouching and manipulation, as well as web design.
-                            <br><br>
-                            The programs I'm most familiar with are the Adobe Photoshop, Illustrator, and InDesign. For web design, I have extensive experience with HTML5, CSS3, JavaScript, and jQuery.
-                        </p>
-                    </div>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-10">
+                          <p>
+                              My name's Andrea, and I'm a graphic designer from Kokomo, Indiana. Just this May, I graduated from Indiana University with a B.S. in New Media and web design concentration. Although I'm no longer a student, I'm willing to learn new things and hone my skills for many years to come.
+                              <br><br>
+                              My goal is to make clean, harmonious designs that communicate messages in a unique way. I enjoy experimenting with typography, color, and illustrative elements the most. I also do photo retouching and manipulation, as well as web design.
+                              <br><br>
+                              The programs I'm most familiar with are the Adobe Photoshop, Illustrator, and InDesign. For web design, I have extensive experience with HTML5, CSS3, JavaScript, and jQuery.
+                          </p>
+                      </div>
+                  </div>
                 </div>
             </div><!--about end-->
 
 
             <div id="portfolio" class="anchor">
               <h2>Portfolio</h2>
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-                  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-carousel">
-                    <div class="slides"></div>
-                    <h3 class="title">Illustration</h3>
-                    <!-- <a class="prev">‹</a>
-                    <a class="next">›</a> -->
-                    <a class="close">×</a>
-                    <!-- <a class="play-pause"></a> -->
-                    <ol class="indicator"></ol>
-                  </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-carousel">
+                      <div class="slides"></div>
+                      <h3 class="title">Illustration</h3>
+                      <!-- <a class="prev">‹</a>
+                      <a class="next">›</a> -->
+                      <a class="close">×</a>
+                      <!-- <a class="play-pause"></a> -->
+                      <ol class="indicator"></ol>
+                    </div>
 
-                  <div id="links">
-                    <!-- <a href="assets/portfolio/PRINT-TrueColors.jpg" title="Banana">
-                      <img src="assets/portfolio/PRINT-TrueColors.jpg" alt="Banana">
-                    </a> -->
-                    <a href="images/apple.jpg" title="Apple">
-                      <img src="images/thumbnails/apple.jpg" alt="Apple">
-                    </a>
-                    <a href="images/orange.jpg" title="Orange">
-                      <img src="images/thumbnails/orange.jpg" alt="Orange">
-                    </a>
-                  </div>
-
+                    <div id="links">
+                      <!-- <a href="assets/portfolio/PRINT-TrueColors.jpg" title="Banana">
+                        <img src="assets/portfolio/PRINT-TrueColors.jpg" alt="Banana">
+                      </a> -->
+                      <a href="images/apple.jpg" title="Apple">
+                        <img src="images/thumbnails/apple.jpg" alt="Apple">
+                      </a>
+                      <a href="images/orange.jpg" title="Orange">
+                        <img src="images/thumbnails/orange.jpg" alt="Orange">
+                      </a>
+                    </div>
                 </div>
               </div>
             </div><!--portfolio end-->
@@ -132,15 +132,16 @@
 
             <div id="resume" class="anchor">
               <h2>Resume</h2>
+              <div class="container">
                 <div class="row">
                   <div class="col-md-12">
                     <h3>Experience</h3>
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row resume">
                     <div class="col-md-3">
-                      <span class="col1">Aug 2016 – present</span>
+                      <p>Aug 2016 – present</p>
                     </div>
                     <div class="col-md-7">
                       <strong>Carson Pirie Scott, Sales Associate</strong>
@@ -151,9 +152,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row resume">
                   <div class="col-md-3">
-                    <span class="col1">Oct 2015 – Jan 2016</span>
+                    <p>Oct 2015 – Jan 2016</p>
                   </div>
                   <div class="col-md-7">
                     <strong>Old Navy, Sales Associate</strong>
@@ -166,9 +167,10 @@
                       </ul>
                   </div>
                 </div>
-                <div class="row">
+
+                <div class="row resume">
                     <div class="col-md-3">
-                      <span class="col1">Aug 2014 - May 2015</span>
+                      <p>Aug 2014 - May 2015</p>
                     </div>
                     <div class="col-md-7">
                       <strong>Indiana University Art Gallery, New Media Intern</strong>
@@ -180,14 +182,16 @@
                         </ul>
                     </div>
                 </div>
+              </div>
+              <div class="container">
                 <div class="row">
                   <div class="col-md-12">
                     <h3>Education</h3>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row resume">
                   <div class="col-md-3">
-                    <span class="col1">Aug 2012 - May 2016</span>
+                    <p>Aug 2012 - May 2016</p>
                   </div>
                   <div class="col-md-7">
                     <strong>Indiana University</strong>
@@ -196,15 +200,17 @@
                       </ul>
                   </div>
                 </div>
-<!--                    <i class="fa fa-file-pdf-o fa-1x" aria-hidden="true"></i> <a href="assets/files/FunkAndreaResume2016.pdf">Resume</a>
-                        <i class="fa fa-file-pdf-o fa-1x" aria-hidden="true"></i> <a href="assets/files/FunkAndreaCV2016.pdf">CV</a> -->
+
+                <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> <span style="font-size:20px"> <a href="assets/files/FunkAndreaCV2016.pdf">CV</a>
+
+              </div>
             </div><!--end resume-->
 
 
             <div id="skills" class="anchor">
 
                 <h2>Skills</h2>
-
+                <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                       <div class="skills-txt">
@@ -266,61 +272,48 @@
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </div>
                       </div>
+                    </div>
                 </div>
             </div><!--skills end-->
 
 
             <div id="contact" class="anchor">
                 <h2>Contact</h2>
-                <div class="row">
-                    <div class="col-md-5">
-                        <table class="table-responsive table">
-                            <tbody>
-                                <!-- <tr>
-                                    <td>
-                                        <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-                                        <span class="sr-only">Phone number:</span>
-                                        (765) 252-9970<br>
-                                    </td>
-                                </tr> -->
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-                                        <span class="sr-only">Email:</span>  afunk91@gmail.com
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>
-                            <a class="soc-link hvr-push" href="https://www.linkedin.com/in/andrea-funk-650296121"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
-                            <a class="soc-link hvr-push" href="https://www.behance.net/afunk91958d"><i class="fa fa-behance-square fa-4x" aria-hidden="true"></i></a>
-                            <a class="soc-link hvr-push" href="https://github.com/fun-k"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
-                    <div class="article col-md-7">
-                        <form class="contact-form" action="https://docs.google.com/forms/d/1vsbF6ganO5gp2OjKt7TMWp82KWdXsIuBluh87gTNdNE/formResponse" method="post" target="_blank">
-                            <fieldset id="fieldsetForm">
-                                <ul>
-                                    <li>
-                                        <label for="entry_2005620554">Name</label><br>
-                                        <input class="form-control" type="text" name="entry.2005620554" maxlength="100" value="" id="entry_2005620554" required />
-                                    </li>
-                                    <li>
-                                        <label for="entry_1045781291">Email</label><br>
-                                        <input class="fixIt form-control" type="email" name="entry.1045781291" maxlength="100" value="" id="entry_1045781291" required />
-                                    </li>
-                                    <li>
-                                        <label for="entry_839337160">Message</label><br>
-                                        <textarea class="fixIt form-control" name="entry.839337160" maxlength="5000" id="entry_839337160" required></textarea>
-                                    </li>
-                                    <li class="submit">
-                                        <input class="btn btn-primary form-control" type="submit" name="submit" value="Send" target="_blank"/>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                        </form>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <a class="soc-link hvr-push" href="https://www.linkedin.com/in/andrea-funk-650296121"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+                        <a class="soc-link hvr-push" href="https://www.behance.net/afunk91958d"><i class="fa fa-behance-square fa-4x" aria-hidden="true"></i></a>
+                        <a class="soc-link hvr-push" href="https://github.com/fun-k"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+
+                        <!-- <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Email:</span>  afunk91@gmail.com -->
+                      </div>
+
+                      <div class="article col-md-8">
+                          <form class="contact-form" action="https://docs.google.com/forms/d/1vsbF6ganO5gp2OjKt7TMWp82KWdXsIuBluh87gTNdNE/formResponse" method="post" target="_blank">
+                              <fieldset id="fieldsetForm">
+                                  <ul>
+                                      <li>
+                                          <label for="entry_2005620554">Name</label><br>
+                                          <input class="form-control" type="text" name="entry.2005620554" maxlength="100" value="" id="entry_2005620554" required />
+                                      </li>
+                                      <li>
+                                          <label for="entry_1045781291">Email</label><br>
+                                          <input class="fixIt form-control" type="email" name="entry.1045781291" maxlength="100" value="" id="entry_1045781291" required />
+                                      </li>
+                                      <li>
+                                          <label for="entry_839337160">Message</label><br>
+                                          <textarea class="fixIt form-control" name="entry.839337160" maxlength="5000" id="entry_839337160" required></textarea>
+                                      </li>
+                                      <li class="submit">
+                                          <input class="btn btn-primary form-control" type="submit" name="submit" value="Send" target="_blank"/>
+                                      </li>
+                                  </ul>
+                              </fieldset>
+                          </form>
+                      </div>
                     </div>
                 </div>
             </div><!--contact end-->
