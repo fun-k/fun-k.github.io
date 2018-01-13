@@ -19,16 +19,23 @@
     <script src="https://use.fontawesome.com/a7eb95e421.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='assets/hover-min.css' rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/hover-min.css">
+    <link rel="stylesheet" href="assets/blueimp-gallery.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script>
-    $(".navbar-nav").child.hover(function() {
-      $(this).({ borderColor: "black" }, 1000);
-        },function() {
-          $(this).animate({ borderColor: "red" }, 500);
+
+      $(document).ready(function(){
+        $('.navbar-collapse ul li a').click(function() {
+          $('.navbar-collapse').collapse('hide');
         });
-      }
+
+        $('.navlink').click(function() {
+            $('.navlink').removeClass('active');
+            $(this).addClass('active');
+        });
+      });
+
     </script>
 
 </head>
@@ -37,32 +44,32 @@
 
     <div class="container" id="wrapper">
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Andrea Funk <span class="subtitle">Designer</span></a>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a class="hvr-push" href="#about">About</a></li>
-                    <li><a class="hvr-push" href="#portfolio">Portfolio</a></li>
-                    <li><a class="hvr-push" href="#resume">Resume</a></li>
-                    <li><a class="hvr-push" href="#skills">Skills</a></li>
-                    <li><a class="hvr-push" href="#contact">Contact</a></li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Andrea Funk <span class="subtitle">Designer</span></a>
+              </div>
+              <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li><a class="navlink hvr-float" href="#about">About</a></li>
+                  <li><a class="navlink hvr-float" href="#portfolio">Portfolio</a></li>
+                  <li><a class="navlink hvr-float" href="#resume">Resume</a></li>
+                  <li><a class="navlink hvr-float" href="#skills">Skills</a></li>
+                  <li><a class="navlink hvr-float" href="#contact">Contact</a></li>
+              </ul>
+              </div>
+          </div>
+      </nav>
 
         <div class="container">
 
-            <div id="about">
+            <div id="about" class="anchor">
                 <h2>Hello!</h2>
                 <div class="row">
                     <div class="col-md-10">
@@ -78,17 +85,43 @@
             </div><!--about end-->
 
 
-            <div id="portfolio">
+            <div id="portfolio" class="anchor">
               <h2>Portfolio</h2>
-              <div class="row"></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-carousel">
+                    <div class="slides"></div>
+                    <h3 class="title">Illustration</h3>
+                    <!-- <a class="prev">‹</a>
+                    <a class="next">›</a> -->
+                    <a class="close">×</a>
+                    <!-- <a class="play-pause"></a> -->
+                    <ol class="indicator"></ol>
+                  </div>
+
+                  <div id="links">
+                    <!-- <a href="assets/portfolio/PRINT-TrueColors.jpg" title="Banana">
+                      <img src="assets/portfolio/PRINT-TrueColors.jpg" alt="Banana">
+                    </a> -->
+                    <a href="images/apple.jpg" title="Apple">
+                      <img src="images/thumbnails/apple.jpg" alt="Apple">
+                    </a>
+                    <a href="images/orange.jpg" title="Orange">
+                      <img src="images/thumbnails/orange.jpg" alt="Orange">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
             </div><!--portfolio end-->
 
 
-            <div id="resume">
+            <div id="resume" class="anchor">
               <h2>Resume</h2>
                 <div class="row">
                   <div class="col-md-12">
-                    <span class="header">Experience</span>
+                    <h3>Experience</h3>
                   </div>
                 </div>
 
@@ -136,7 +169,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <span class="header">Education</span>
+                    <h3>Education</h3>
                   </div>
                 </div>
                 <div class="row">
@@ -155,7 +188,7 @@
             </div><!--end resume-->
 
 
-            <div id="skills">
+            <div id="skills" class="anchor">
 
                 <h2>Skills</h2>
 
@@ -226,10 +259,10 @@
             </div><!--skills end-->
 
 
-            <div id="contact">
+            <div id="contact" class="anchor">
                 <h2>Contact</h2>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <table class="table-responsive table">
                             <tbody>
                                 <!-- <tr>
@@ -253,7 +286,7 @@
                             <a class="soc-link hvr-push" href="https://github.com/fun-k"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
                         </p>
                     </div>
-                    <div class="article col-md-6">
+                    <div class="article col-md-7">
                         <form class="contact-form" action="https://docs.google.com/forms/d/1vsbF6ganO5gp2OjKt7TMWp82KWdXsIuBluh87gTNdNE/formResponse" method="post" target="_blank">
                             <fieldset id="fieldsetForm">
                                 <ul>
@@ -270,9 +303,9 @@
                                         <textarea class="fixIt form-control" name="entry.839337160" maxlength="5000" id="entry_839337160" required></textarea>
                                     </li>
                                     <li class="submit">
-                                        <input class="btn btn-primary form-control hvr-pulse-shrink" type="submit" name="submit" value="Send" target="_blank"/>
+                                        <input class="btn btn-primary form-control" type="submit" name="submit" value="Send" target="_blank"/>
                                     </li>
-                                  </ul>
+                                </ul>
                             </fieldset>
                         </form>
                     </div>
@@ -292,6 +325,26 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/blueimp-gallery.min.js">
+
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+
+    blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+    );
+    </script>
 
 </body>
 
