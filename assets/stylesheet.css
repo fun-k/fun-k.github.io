@@ -24,12 +24,14 @@ h3{
 }
 
 a{
-    color:#c6d265 !important;
+    color:#AFAFAF !important;
     cursor:pointer;
 }
 
 strong{
-    font-weight:900 !important;
+    font-weight:600 !important;
+    letter-spacing:1px;
+
 }
 
 .anchor:before {
@@ -40,9 +42,9 @@ strong{
 }
 
 .anchor{
-    min-height:275px;
-    width:100%;
+    margin-bottom:15px;
 }
+
 
 /*Navigation*/
 
@@ -100,33 +102,19 @@ strong{
 .resume {
     border:1px;
     border-color:transparent;
-    border-radius:15px;
-    background-color:#c6d265;
+    border-radius:10px;
+    background-color:rgba(198, 210, 101, .85);
     padding:8px;
-    margin: 0 0 20px !important;
-}
-
-/*Table*/
-
-table{
-    margin-bottom:0 !important;
-}
-
-.table-responsive{
-    border:0 !important;
-}
-
-td{
-    width:200px !important;
-    border:0 !important;
-    padding: 0 8px 8px 0 !important;
+    margin: 0 0 20px!important;
+    font-size:15px;
 }
 
 /*Skills*/
 
-.skills-txt{
-    font-size:18px;
+#skills p{
+    font-size:17px;
     line-height:30px;
+    margin-bottom: 0;
 }
 
 .fa-star, .fa-star-o{
@@ -138,8 +126,9 @@ td{
 .soc-link .fa{
     color:#c6d265 !important;
     transition:1s;
-    cursor: pointer;
+    cursor:pointer;
     margin-right:3.5px;
+    margin-top: 15px;
 }
 
 .contact-form {
@@ -162,33 +151,32 @@ td{
 
 .contact-form input{
     border:1px solid #AFAFAF !important;
-    border-radius:0 !important;
+    border-radius:10 px !important;
 }
 
 .contact-form textarea{
     border:1px solid #AFAFAF !important;
-    border-radius:0;
+    border-radius:10px;
     height:150px !important;
 }
 
 .form-control:focus{
-    box-shadow:3px 3px 3px #c6d265 !important;
-    -moz-box-shadow:3px 3px 3px #c6d265 !important;
-    -webkit-box-shadow:3px 3px 3px #c6d265 !important;
+    box-shadow:3px 3px 3px #AFAFAF !important;
+    -moz-box-shadow:3px 3px 3px #AFAFAF !important;
+    -webkit-box-shadow:3px 3px 3px #AFAFAF !important;
 }
 
 .btn-primary{
     background-color:#c6d265 !important;
-    padding:5px 10px !important;
+    padding:5px 5px !important;
+    width:100px !important;
     color:#FFF !important;
+    border:1px;
+    border-color:transparent !important;
     font-size:13px;
     text-transform:uppercase;
     transition:1s !important;
 }
-
-/* .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-    opacity: .5;
-} */
 
 /*Footer*/
 
