@@ -5,27 +5,22 @@ html, body{
     font-size:15px;
     height:100%;
     padding-top:30px;
+    color: rgba(0, 5, 75, 1) !important;
 }
 
 h2{
     text-transform:uppercase;
     letter-spacing:5px;
     font-size:28px!important;
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 h3{
-    color:#c6d265 !important;
+    color:#AFAFAF !important;
     text-transform:uppercase !important;
     letter-spacing:5px;
     font-size:20px !important;
     font-weight:300;
-    padding-left:0!important;
-    margin-bottom:10px !important;
-}
-
-strong{
-    color:#AFAFAF;
 }
 
 a{
@@ -33,11 +28,20 @@ a{
     cursor:pointer;
 }
 
+strong{
+    font-weight:900 !important;
+}
+
 .anchor:before {
     display: block;
     content: "";
     height: 50px;
     margin: -50px 0 0;
+}
+
+.anchor{
+    min-height:275px;
+    width:100%;
 }
 
 /*Navigation*/
@@ -93,9 +97,13 @@ a{
 
 /*Resume*/
 
-.col1{
-    color:rgba(0, 5, 75, 1);
-    width:15%;
+.resume {
+    border:1px;
+    border-color:transparent;
+    border-radius:15px;
+    background-color:#c6d265;
+    padding:8px;
+    margin: 0 0 20px !important;
 }
 
 /*Table*/
@@ -135,7 +143,7 @@ td{
 }
 
 .contact-form {
-  width: 350px !important;
+  width: 500px !important;
 }
 
 .contact-form ul{
@@ -160,7 +168,7 @@ td{
 .contact-form textarea{
     border:1px solid #AFAFAF !important;
     border-radius:0;
-    height:300px;
+    height:150px !important;
 }
 
 .form-control:focus{
@@ -186,16 +194,15 @@ td{
 
 footer {
     position: relative;
+    margin-top:40px;
     bottom:0;
     height:50px;
     width: 100%;
     font-size:13px;
-    color:#AFAFAF;
-    background-color:rgba(0, 5, 75, 1)!important;
+    /* background-color:rgba(0, 5, 75, 1)!important; */
 }
 
 footer p {
-    margin-top:20px;
     color:#AFAFAF;
     text-align: center;
 }
