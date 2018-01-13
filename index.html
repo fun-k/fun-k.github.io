@@ -34,7 +34,20 @@
             $('.navlink').removeClass('active');
             $(this).addClass('active');
         });
-      });
+
+        $('a[href^="#"]').on('click',function (e) {
+	        e.preventDefault();
+
+	        var target = this.hash;
+	        var $target = $(target);
+
+	        $('html, body').stop().animate({
+	            'scrollTop': $target.offset().top
+	        }, 900, 'swing', function () {
+	            window.location.hash = target;
+          });
+	      });
+	     });
 
     </script>
 
@@ -53,7 +66,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">Andrea Funk <span class="subtitle">Designer</span></a>
+                  <a class="navbar-brand hvr-float" href="index.html">Andrea Funk <span class="subtitle">Designer</span></a>
               </div>
               <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
