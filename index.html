@@ -42,18 +42,16 @@
 	        }, 600, 'swing');
 	      });
 
-        window.onscroll = function() {fixNavbar()};
-
-        function fixNavbar(){
+        $(window).on('scroll',function (e){
           var navbar = $(".navbar");
           var fixed = navbar.offsetTop;
 
-          if (this.scrollTop >= fixed) {
+          if (this.scrollTop > fixed) {
             navbar.addClass("nav-fixed");
           } else {
             navbar.removeClass("nav-fixed");
           }
-        };
+        });
 	    });
     </script>
   </head>
