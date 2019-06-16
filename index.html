@@ -43,16 +43,18 @@
 	        }, 600, 'swing');
 	      });
 
-        var wrap = $("#wrapper");
-        var scrollHeight = 100;
+        window.onscroll = function() {fixNavbar()};
 
-        wrap.on("scroll", function(e) {
-          if (this.scrollTop > scrollHeight) {
-            wrap.addClass("nav-fixed");
+        function fixNavbar(){
+          var navbar = $(".navbar");
+          var fixed = navbar.offsetTop;
+
+          if (this.scrollTop >= fixed) {
+            navbar.addClass("nav-fixed");
           } else {
-            wrap.removeClass("nav-fixed");
+            navbar.removeClass("nav-fixed");
           }
-        });
+        };
 	    });
     </script>
   </head>
