@@ -36,8 +36,8 @@ strong{
 .anchor:before {
     display: block;
     content: "";
-    /* height: 50px; */
-    /* margin: -25px 0 0; */
+    height:40px;
+    margin-top: -25px;
 }
 
 .anchor{
@@ -64,7 +64,20 @@ strong{
 }
 
 /*Navigation*/
-.navbar{border-radius:0 !important}
+.navbar{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  z-index: 99;
+  border-radius:0 !important;
+}
+
+.nav-fixed{
+    top: 0;
+    bottom: inherit;
+    left: 0;
+    position: fixed;
+}
 
 .navbar-brand {
     color:#AFAFAF !important;

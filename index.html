@@ -44,15 +44,15 @@
 	      });
 	     });
 
-       var wrap = $("#wrap");
-       var scrollHeight = calc(100vh-50px);
+       var wrap = $("#wrapper");
+       var scrollHeight = 100vh;
 
        wrap.on("scroll", function(e) {
 
          if (this.scrollTop > scrollHeight) {
-            wrap.addClass("fix-nav");
+            wrap.addClass("nav-fixed");
           } else {
-            wrap.removeClass("fix-nav");
+            wrap.removeClass("nav-fixed");
           }
 
         });
@@ -60,6 +60,7 @@
   </head>
 
   <body>
+
     <div id="wrapper">
 
       <div id="greeting">
@@ -80,14 +81,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand hvr-float" href="index.html">Andrea Funk <span class="subtitle">Web Developer</span></a>
+              <a class="navbar-brand" href="index.html">Andrea Funk <span class="subtitle">Web Developer</span></a>
             </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a class="navlink hvr-float" href="#portfolio">Portfolio</a></li>
-              <li><a class="navlink hvr-float" href="#resume">Resume</a></li>
-              <li><a class="navlink hvr-float" href="#skills">Skills</a></li>
-              <li><a class="navlink hvr-float" href="#contact">Contact</a></li>
+              <li><a class="navlink" href="#portfolio">Portfolio</a></li>
+              <li><a class="navlink" href="#resume">Resume</a></li>
+              <li><a class="navlink" href="#skills">Skills</a></li>
+              <li><a class="navlink" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
