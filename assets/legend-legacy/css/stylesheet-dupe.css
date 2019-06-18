@@ -1,0 +1,109 @@
+body {
+  background-color:#120013;
+  color:#7b7391;
+  font-family:'Roboto', sans-serif;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
+h1, h2, h3{
+  font-family:'Playfair',serif;
+}
+
+/* Navbar */
+
+.nav-item a, .nav-item a:hover, .nav-item a:focus, .nav-item a:visited{
+  font-size:18px;
+  color:#c9bfaf;
+  font-family:'Roboto Condensed', sans-serif;
+  text-decoration:none;
+}
+
+.nav-item .btn{
+  background-color:none!important;
+  color:#7b7391!important;
+}
+
+.hvr-underline-reveal:before{
+  background:#7b7391!important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display:block;
+}
+
+.dropdown-menu{
+  background-color:#7b7391;
+  border:0;
+}
+
+.dropdown-menu a{
+  color:#52304e!important;
+}
+
+.dropdown-item:hover{
+  background-color:transparent!important;
+}
+
+/* Wrapper */
+
+.wrapper{
+  margin-top:35px;
+}
+
+.brand{
+  text-align:center;
+  min-width:318px;
+  margin-left:-15px;
+  padding-bottom:15px;
+}
+
+.brand:hover{
+  text-decoration:none;
+}
+
+.brand img{
+  width:30%;
+  height:30%;
+}
+
+.title h1{
+  color:#7b7391;
+  font-size:34px;
+}
+
+.title h3{
+  font-family:'Roboto', sans-serif;
+  color:#c9bfaf;
+  line-height:5px;
+  font-size:18px;
+}
+
+article{
+  padding:20px;
+  border:1px dashed #52304e;
+  margin-bottom:35px;
+}
+
+article img{
+  padding-bottom:10px;
+}
+
+article p a, article p a:visited{
+  color:#7b7391;
+  text-decoration:underline;
+}
+
+article p a:hover, article p a:focus {
+  color:#52304e;
+  transition:.5s;
+}
+/* Footer */
+
+footer{
+  font-size:12px;
+}

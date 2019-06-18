@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Andrea Funk is a web developer from Kokomo, IN.">
     <meta name="author" content="Andrea Funk">
 
@@ -57,16 +57,17 @@
 
     <div id="wrapper">
 
-      <div id="greeting">
+      <div id="intro">
         <div class="container">
           <div class="hello">
             <h2>Hello!</h2>
-            <p>My name is Andrea Funk and I'm a web designer from Kokomo, IN. I'm an Indiana University alumn. My goal is to make clean, harmonious designs that communicate messages in a unique way.</p>
+            <p>My name is Andrea Funk and I'm a web designer from Kokomo, IN. I'm an Indiana University alum whose goal is to make clean, harmonious designs that communicate messages in a unique way.</p>
+            <button class="btn-primary hvr-push"><a href="#nav">Get to know me</a></button>
           </div>
         </div>
       </div>
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default" id="nav">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -94,7 +95,11 @@
           <h2>Portfolio</h2>
             <div class="container">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-3">
+                  <img src="assets/50thcommencement.png">
+                </div>
+                <div class="col-md-3">
+                  <img src="assets/KO_UITS_IQWall.png">
                 </div>
               </div>
             </div>
@@ -270,7 +275,7 @@
                             <textarea class="fixIt form-control" name="entry.839337160" maxlength="5000" id="entry_839337160" required></textarea>
                           </li>
                           <li class="submit">
-                            <input class="btn btn-primary form-control" type="submit" name="submit" value="Send" target="_blank"/>
+                            <input class="btn btn-primary form-control hvr-push" type="submit" name="submit" value="Send" target="_blank"/>
                           </li>
                         </ul>
                       </fieldset>

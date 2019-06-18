@@ -1,0 +1,130 @@
+body {
+  background:url(../img/oriandebackground.png);
+  background-size:cover;
+  /* background: rgba(242,204,242,1);
+  background: -moz-linear-gradient(45deg, rgba(242,204,242,1) 0%, rgba(171,142,254,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(242,204,242,1)), color-stop(100%, rgba(171,142,254,1)));
+  background: -webkit-linear-gradient(45deg, rgba(242,204,242,1) 0%, rgba(171,142,254,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(242,204,242,1) 0%, rgba(171,142,254,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(242,204,242,1) 0%, rgba(171,142,254,1) 100%);
+  background: linear-gradient(45deg, rgba(242,204,242,1) 0%, rgba(171,142,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ccf2', endColorstr='#ab8efe', GradientType=1 ); */
+  color:#3e2f5c;
+  background-color:#EFEFEF;
+  font-family:'Roboto', sans-serif;
+}
+
+@media (min-width: 992px) {
+  body {
+    /* padding-top: 40px; */
+  }
+}
+
+h1, h2, h3{
+  font-family:'Playfair',serif;
+}
+
+/* Navbar */
+
+nav{
+  margin-top:40px;
+}
+
+.nav-item a, .nav-item a:hover, .nav-item a:focus, .nav-item a:visited{
+  font-size:18px;
+  color:#7150ac;
+  font-family:'Roboto Condensed', sans-serif;
+  text-decoration:none;
+}
+
+.nav-item .btn{
+  background-color:none!important;
+  color:#7b7391!important;
+}
+
+.hvr-underline-reveal:before{
+  background:#aa7aff!important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display:block;
+}
+
+.dropdown-menu{
+  background-color:#aa7aff;
+  border:0;
+}
+
+.dropdown-menu a{
+  color:rgba(250, 237, 255, 1);!important;
+}
+
+.dropdown-menu a:hover{color:rgba(250, 237, 255, 1);}
+
+.dropdown-item:hover{
+  background-color:transparent!important;
+}
+
+/* Wrapper */
+
+.wrapper{
+  margin-top:35px;
+}
+
+.brand{
+  text-align:center;
+  min-width:318px;
+  margin-left:-15px;
+  padding-bottom:15px;
+}
+
+.brand:hover{
+  text-decoration:none;
+}
+
+.brand img{
+  width:30%;
+  height:30%;
+}
+
+.title h1{
+  color:#835dc6;
+  font-size:34px;
+}
+
+.title h2{
+  font-family:'Roboto Condensed', sans-serif;
+  color:#a75dd7;
+  line-height:5px;
+  font-size:20px;
+}
+
+h3{
+  color:#835dc6;
+}
+
+article{
+  background:rgba(250, 237, 255, .5);
+  padding:20px;
+  border:1px dashed #aa7aff;
+  margin-bottom:35px;
+}
+
+article img{
+  padding-bottom:10px;
+}
+
+article p a, article p a:visited{
+  color:#9d76e6;
+  text-decoration:underline;
+}
+
+article p a:hover, article p a:focus {
+  color:#df91fe;
+  transition:.5s;
+}
+/* Footer */
+
+footer{
+  font-size:12px;
+}
