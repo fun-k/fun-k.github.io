@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Andrea Funk is a web developer from Kokomo, IN.">
     <meta name="author" content="Andrea Funk">
-
     <title>Andrea Funk | Web Developer</title>
+
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="assets/stylesheet.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/a7eb95e421.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -22,12 +23,8 @@
 
     <script>
       $(document).ready(function(){
-        $('.navbar-collapse ul li a').click(function() {
-          $('.navbar-collapse').collapse('hide');
-        });
-
-        $('.navlink').click(function() {
-            $('.navlink').removeClass('active');
+        $('.nav-item').click(function() {
+            $('.nav-item').removeClass('active');
             $(this).addClass('active');
         });
 
@@ -41,14 +38,6 @@
 	            'scrollTop': $target.offset().top
 	        }, 600, 'swing');
 	      });
-
-        $(window).scroll(function (){
-          if ($(window).scrollTop() > 550) {
-            $('.navbar').addClass('fixed-top');
-          }else {
-            $('.navbar').removeClass('fixed-top');
-          }
-        });
 	    });
     </script>
   </head>
@@ -58,32 +47,29 @@
     <div id="wrapper">
 
       <div id="intro">
-        <div class="container">
-          <div class="hello">
-            <h2>Hello!</h2>
-            <p>My name is Andrea Funk and I'm a web designer from Kokomo, IN. I'm an Indiana University alum whose goal is to make clean, harmonious designs that communicate messages in a unique way.</p>
-            <button class="btn-primary hvr-push"><a href="#nav">Get to know me</a></button>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="hello">
+              <h2>Hello!</h2>
+              <p>My name is Andrea Funk and I'm a web designer from Kokomo, IN. I'm an Indiana University alum whose goal is to make clean, harmonious designs that communicate messages in a unique way.</p>
+              <button class="btn-primary hvr-push"><a href="#navigation">Get to know me</a></button>
+            </div>
           </div>
         </div>
       </div>
 
-      <nav class="navbar navbar-default" id="nav">
+      <nav class="navbar navbar-dark navbar-expand-md" id="navigation" role="navigation">
         <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">Andrea Funk <span class="subtitle">Web Developer</span></a>
-            </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a class="navlink" href="#portfolio">Portfolio</a></li>
-              <li><a class="navlink" href="#resume">Resume</a></li>
-              <li><a class="navlink" href="#skills">Skills</a></li>
-              <li><a class="navlink" href="#contact">Contact</a></li>
+          <a class="navbar-brand" href="#">Andrea Funk <span class="subtitle">Web Developer</span></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="navbar-nav" data-target="#navbar-expand" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-expand">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -95,10 +81,10 @@
           <h2>Portfolio</h2>
             <div class="container">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md">
                   <img src="assets/50thcommencement.png">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md">
                   <img src="assets/KO_UITS_IQWall.png">
                 </div>
               </div>
@@ -109,7 +95,7 @@
             <h2>Resume</h2>
             <div class="container">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md">
                   <h3>Experience</h3>
                 </div>
               </div>
@@ -193,7 +179,7 @@
             <h2>Skills</h2>
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md">
                   <p>
                     Adobe Photoshop <span class="sr-only">5 stars</span>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -217,7 +203,7 @@
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md">
                   <p>
                     <span>HTML 5 <span class="sr-only">5 stars</span></span>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -297,7 +283,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm">
             <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018 Andrea Funk</p>
           </div>
         </div>

@@ -33,26 +33,27 @@ strong{
 .anchor:before {
     display: block;
     content: "";
-    /* margin-top: -25px; */
+    height:56px;
 }
 
-.anchor{
+/* .anchor{
     margin-bottom:15px;
-}
+} */
 
 #intro{
-  height:calc(100vh - 50px);
+  height:calc(100vh - (12em + 56px));
 }
 
-#intro .container{
+#intro .container-fluid{
   background-image:url('initials-bg.svg');
   background-repeat:no-repeat;
   background-size:cover;
+  background-position:top;
   height:100%;
 }
 
 .hello{
-  margin-top:25%;
+  margin-top:12em;
   width:55%;
 }
 
@@ -68,21 +69,8 @@ strong{
   background-color:rgba(0, 5, 75, 1) !important;
 }
 
-@media only screen and (max-width: 767px){
-  .hello{
-    width: 500px;
-    margin:45% auto 0;
-  }
-}
-
 /*Navigation*/
 .navbar{
-  overflow:hidden;
-  height: 50px;
-  width: 100%;
-  position:fixed;
-  border:0!important;
-  border-radius:0 !important;
   background-color:rgba(0, 5, 75, 1)!important;
 
 }
