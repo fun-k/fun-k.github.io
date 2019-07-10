@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="assets/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/a7eb95e421.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/hover-min.css">
@@ -23,22 +22,51 @@
 
     <script>
       $(document).ready(function(){
-        $('.nav-item').click(function() {
-            $('.nav-item').removeClass('active');
-            $(this).addClass('active');
+
+        $("a").on('click', function(event) {
+
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 700, function(){
+
+              window.location.hash = hash;
+            });
+          }
         });
 
-        $('a[href^="#"]').on('click',function (e) {
-	        e.preventDefault();
+        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+          var stickyHeight = sticky.outerHeight();
+          var stickyTop = stickyWrapper.offset().top;
+          if (scrollElement.scrollTop() >= stickyTop){
+            stickyWrapper.height(stickyHeight);
+            sticky.addClass("is-sticky");
+          }
+          else{
+            sticky.removeClass("is-sticky");
+            stickyWrapper.height('auto');
+          }
+        };
 
-	        var target = this.hash;
-	        var $target = $(target);
+        $('[data-toggle="sticky-onscroll"]').each(function() {
+           var sticky = $(this);
+           var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+           sticky.before(stickyWrapper);
+           sticky.addClass('sticky');
 
-	        $('html, body').stop().animate({
-	            'scrollTop': $target.offset().top
-	        }, 600, 'swing');
-	      });
-	    });
+          // Scroll & resize events
+          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+            stickyToggle(sticky, stickyWrapper, $(this));
+          });
+
+          // On page load
+          stickyToggle(sticky, stickyWrapper, $(window));
+        });
+      });
     </script>
   </head>
 
@@ -58,7 +86,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-dark navbar-expand-md" id="navigation" role="navigation">
+      <nav class="navbar navbar-dark navbar-expand-md" data-toggle="sticky-onscroll" id="navigation" role="navigation">
         <div class="container">
           <a class="navbar-brand" href="#">Andrea Funk <span class="subtitle">Web Developer</span></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="navbar-nav" data-target="#navbar-expand" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +104,6 @@
       </nav>
 
       <div class="container">
-
         <div id="portfolio" class="anchor">
           <h2>Portfolio</h2>
             <div class="container">
@@ -289,6 +316,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/a7eb95e421.js"></script>
 
   </body>
 </html>
