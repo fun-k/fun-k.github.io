@@ -5,6 +5,12 @@ body{
     color: rgba(0, 5, 75, 1) !important;
 }
 
+h1{
+  text-transform:uppercase;
+  font-size:5em;
+  letter-spacing:5px;
+}
+
 h2{
     text-transform:uppercase;
     letter-spacing:5px;
@@ -42,36 +48,23 @@ strong{
 .anchor:before {
     display: block;
     content: "";
-    height:56px;
+    height:60px;
 }
 
-/* .anchor{
-    margin-bottom:15px;
-} */
 
 #intro{
-  height:calc(100vh - (12em + 56px));
-}
-
-#intro .container-fluid{
-  background-image:url('initials-bg.svg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:top;
-  height:100%;
+  height:calc(100vh - 56px);
+  background-color:#c6d265;
 }
 
 .hello{
-  margin-top:12em;
-  width:55%;
-}
-
-.hello h2{
-  font-size:40px;
+  margin:0 auto;
+  padding-top:10em;
+  width:575px;
 }
 
 .hello p{
-  font-size:20px;
+  font-size:1.5em;
 }
 
 .hello .btn-primary{
@@ -132,14 +125,11 @@ strong{
 #portfolio img{
   width:100%;
 }
+
 /*Resume*/
 
-.resume {
-    border:1px;
-    border-color:transparent;
+#resume .container-fluid {
     background-color:rgba(198, 210, 101, .85);
-    padding:8px;
-    margin: 0 0 20px!important;
     font-size:15px;
 }
 
@@ -157,16 +147,9 @@ strong{
 
 /*Contact*/
 
-.soc-link .fa{
-    color:#c6d265 !important;
-    transition:1s;
-    cursor:pointer;
-    margin-right:3.5px;
-    margin-top: 15px;
-}
-
 .contact-form {
   width: 500px !important;
+  margin:0 auto;
 }
 
 .contact-form ul{
@@ -220,19 +203,33 @@ strong{
 .btn-primary a:hover, .btn-primary a:focus{
   text-decoration: none;
 }
+
+.social{
+  background-color:rgba(0, 5, 75, 1);
+}
+
+.social .soc-link .fa{
+    color:#c6d265 !important;
+    transition:1s;
+    cursor:pointer;
+    margin-right:.5em;
+    margin-top: 15px;
+}
+
+.social h2{
+  color:#AFAFAF;
+}
 /*Footer*/
 
 footer {
     position: relative;
-    margin-top:40px;
     bottom:0;
     height:50px;
     width: 100%;
     font-size:13px;
-    /* background-color:rgba(0, 5, 75, 1)!important; */
+    background-color:rgba(0, 5, 75, 1);
 }
 
 footer p {
     color:#AFAFAF;
-    text-align: center;
 }
