@@ -70,7 +70,19 @@ strong{
 
 @media only screen and (max-width:991px){
   .hello{
-    padding-top:5.5em;
+    padding-top:5em;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .hello{
+    font-size:1.75em;
+  }
+  .navbar-brand{
+    font-size:15px !important;
+  }
+  .navbar-brand .subtitle{
+    font-size:13px !important;
   }
 }
 
