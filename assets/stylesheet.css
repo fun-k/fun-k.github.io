@@ -59,25 +59,19 @@ strong{
 }
 
 .hello{
-  margin:0 auto;
-  padding-top:10em;
-  width:25em;;
-}
-
-.hello h1{
+  padding-top:8em;
   text-align:center;
-  margin:20px;
-}
-
-.hello p{
-  font-size:1.25em;
-  background-color:#FFF;
-  padding:20px;
-  text-align:center;
+  font-size:2em;
 }
 
 .hello .btn-primary{
   background-color:#c6d265;
+}
+
+@media only screen and (max-width:991px){
+  .hello{
+    padding-top:5.5em;
+  }
 }
 
 /*Navigation*/
@@ -87,14 +81,14 @@ strong{
 
 .navbar-brand {
   color:#AFAFAF !important;
-  font-size:16px;
+  font-size:17px;
   text-transform:uppercase;
   font-weight:400;
   letter-spacing:2px;
 }
 
 .navbar-brand .subtitle{
-  font-size:12px;
+  font-size:15px;
   color:#c6d265;
 }
 
@@ -113,7 +107,7 @@ strong{
 .navbar-nav a{
     text-transform:uppercase;
     text-decoration:none;
-    font-size:13px;
+    font-size:15px;
     letter-spacing:1px;
     font-weight:300;
     color:#AFAFAF !important;
