@@ -1,17 +1,19 @@
 /*General*/
 body{
-    font-family:'Open Sans', Calibri, sans-serif !important;
+    font-family:'Open Sans', sans-serif !important;
     font-size:15px;
     color: rgba(0, 5, 75, 1) !important;
 }
 
 h1{
+  font-family: 'Montserrat', sans-serif;
   text-transform:uppercase;
   font-size:5em;
   letter-spacing:5px;
 }
 
 h2{
+    font-family: 'Montserrat', sans-serif;
     text-transform:uppercase;
     letter-spacing:5px;
     font-size:28px!important;
@@ -19,14 +21,16 @@ h2{
 }
 
 h3{
-    color:#AFAFAF !important;
+    font-family: 'Montserrat', sans-serif;
+    color:#c6d265 !important;
+    font-weight: 600;
     text-transform:uppercase !important;
     letter-spacing:5px;
     font-size:24px !important;
 }
 
 a{
-    color:#AFAFAF !important;
+    color:#c6d265 !important;
     cursor:pointer;
 }
 
@@ -53,30 +57,35 @@ strong{
     background-color:none;
 }
 
-#intro{
-  height:calc(100vh - 56px);
-  background-color:#c6d265;
+.jumbotron{
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100%;
+  min-height: calc(100vh - 56px);
+  background-color:#c6d265!important;
+  display: flex;
+  align-items: center;
+  margin:0!important;
 }
 
 .hello{
-  padding-top:8em;
-  text-align:center;
-  font-size:2em;
+  /* height: 200px; */
+  font-size:1.75em;
 }
 
 .hello .btn-primary{
   background-color:#c6d265;
 }
-
+/*
 @media only screen and (max-width:991px){
   .hello{
     padding-top:5em;
   }
-}
+} */
 
 @media only screen and (max-width:450px){
+
   .hello{
-    font-size:1.75em;
+    font-size:1.5em;
   }
   .navbar-brand{
     font-size:15px !important;
@@ -88,11 +97,12 @@ strong{
 
 /*Navigation*/
 .navbar{
+  font-family: 'Montserrat', sans-serif;
   background-color:rgba(0, 5, 75, 1)!important;
 }
 
 .navbar-brand {
-  color:#AFAFAF !important;
+  color:#f8f9fa !important;
   font-size:17px;
   text-transform:uppercase;
   font-weight:400;
@@ -105,7 +115,7 @@ strong{
 }
 
 .navbar-toggle {
-    border-color:#AFAFAF;
+    border-color:#f8f9fa;
     background-color:rgba(0, 5, 60, 1) !important;
 }
 
@@ -122,7 +132,7 @@ strong{
     font-size:15px;
     letter-spacing:1px;
     font-weight:300;
-    color:#AFAFAF !important;
+    color:#f8f9fa !important;
     padding:0;
     transition:1s;
 }
@@ -136,13 +146,13 @@ strong{
 }
 
 /*Portfolio*/
-#portfolio img{
-  width:100%;
-}
+
+
 
 /*Resume*/
-
-
+#resume p strong{
+  border-bottom:2px solid #c6d265;
+}
 /*Skills*/
 
 #skills p{
@@ -158,8 +168,7 @@ strong{
 /*Contact*/
 
 .contact-form {
-  width: 450px !important;
-  margin:0 auto;
+  width: 100%;
 }
 
 .contact-form ul{
@@ -217,21 +226,26 @@ strong{
 /*Footer*/
 
 footer {
-    position:relative;
+    /* position:relative;
     bottom:0;
-    width: 100%;
+    width: 100%; */
     background-color:rgba(0, 5, 75, 1);
-    margin-top:60px;
+    /* margin-top:60px; */
+    text-align:center;
+    color:#f8f9fa;
+
 }
 
-footer h3{
+.social p{
+  font-family: 'Montserrat', sans-serif;
   padding:10px;
-  text-align:center;
+  font-size:1.5em;
+  text-transform:uppercase;
+  letter-spacing:5px;
 }
 
 .social{width:325px;margin:0 auto;text-align:center;}
 
-.social h3{padding:20px;margin:0;}
 
 .soc-link .fa{
     color:#c6d265 !important;
@@ -242,9 +256,6 @@ footer h3{
   margin-right:25px;
 }
 
-footer p {
-    color:#AFAFAF;
-    text-align:center;
-    padding-top:30px;
-    font-size:13px;
+.copyright p{
+  font-size:14px;
 }
