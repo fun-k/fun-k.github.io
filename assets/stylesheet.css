@@ -146,7 +146,9 @@ strong{
 }
 
 /*Portfolio*/
-
+.card-img-top{
+  background-size:cover;
+}
 
 
 /*Resume*/
