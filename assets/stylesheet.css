@@ -150,6 +150,9 @@ strong{
   background-size:cover;
 }
 
+.card{
+  height: 100%;
+}
 
 /*Resume*/
 #resume p strong{
